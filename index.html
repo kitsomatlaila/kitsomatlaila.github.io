@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kitso Matlaila | Hackathon Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/framer-motion/dist/framer-motion.umd.js"></script>
+  <style>
+    body { scroll-behavior: smooth; overflow-x: hidden; }
+
+    /* Star animation */
+    .star {
+      position: absolute;
+      background: white;
+      border-radius: 50%;
+      opacity: 0.8;
+      width: 2px;
+      height: 2px;
+      animation: twinkle 3s infinite;
+      transition: box-shadow 0.3s, transform 0.3s;
+    }
+
+    .star:hover {
+      box-shadow: 0 0 8px 4px cyan;
+      transform: scale(1.5);
+    }
+
+    @keyframes twinkle {
+      0%, 100% { opacity: 0.2; }
+      50% { opacity: 1; }
+    }
+  </style>
+</head>
+<body class="bg-gradient-to-br from-black via-gray-900 to-black text-white font-sans">
+
+  <!-- Stars -->
+  <div id="starfield"></div>
+
+  <!-- HERO -->
+  <section class="min-h-screen flex flex-col justify-center items-center text-center px-6 relative z-10">
+    <img src="https://media.licdn.com/dms/image/v2/D4D03AQEwFzhk7B3QcQ/profile-displayphoto-shrink_400_400/B4DZdTk3vhHMAg-/0/1749453866439?e=1769644800&v=beta&t=kGGZ2uVfjQQgTrEgxFnPxjuq-eAVDEFu99JxNR1RhDs" alt="Kitso Matlaila" class="w-40 h-40 rounded-full border-4 border-cyan-500 mb-4 object-cover" />
+    <h1 class="text-5xl md:text-7xl font-extrabold mb-4 animate-pulse">Kitso Matlaila</h1>
+    <p class="text-xl md:text-2xl text-gray-300 mb-6">Cybersecurity • AI • Blockchain • Ethical hacker</p>
+    <a href="#projects" class="px-8 py-3 bg-cyan-500 hover:bg-cyan-600 rounded-full text-black font-bold transition">View My Work</a>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="py-20 px-6 max-w-5xl mx-auto relative z-10">
+    <h2 class="text-4xl font-bold mb-6">About Me</h2>
+    <p class="text-gray-300 leading-relaxed text-lg">
+      I am a passionate Information Technology student specializing in Cybersecurity, Ethical Hacking, and AI Full Stack development, including Machine Learning, Deep Learning, and Generative AI.
+
+I focus on building secure, intelligent systems that detect and prevent cyber threats, automate analysis, and strengthen digital defenses. My hands-on experience includes penetration testing, network security, Python programming, and AI-driven security solutions.
+
+My goal is to become a Cybersecurity and AI Specialist who develops ethical, data-driven solutions that protect organizations and communities, while continuously growing through practical experience and innovation.
+    </p>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="py-20 bg-gray-950 px-6 relative z-10">
+    <h2 class="text-4xl font-bold text-center mb-10">Skills & Technologies</h2>
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-6xl mx-auto">
+      <div class="p-6 bg-gray-900 rounded-xl hover:scale-105 transition">Nmap</div>
+      <div class="p-6 bg-gray-900 rounded-xl hover:scale-105 transition">Python</div>
+      <div class="p-6 bg-gray-900 rounded-xl hover:scale-105 transition">Etherscan</div>
+      <div class="p-6 bg-gray-900 rounded-xl hover:scale-105 transition">C#</div>
+      <div class="p-6 bg-gray-900 rounded-xl hover:scale-105 transition">Generative AI</div>
+      <div class="p-6 bg-gray-900 rounded-xl hover:scale-105 transition">Docker</div>
+      <div class="p-6 bg-gray-900 rounded-xl hover:scale-105 transition">Cybersecurity</div>
+      <div class="p-6 bg-gray-900 rounded-xl hover:scale-105 transition">AI / ML</div>
+      <div class="p-6 bg-gray-900 rounded-xl hover:scale-105 transition">Automation</div>
+      <div class="p-6 bg-gray-900 rounded-xl hover:scale-105 transition">PowerShell</div>
+      <div class="p-6 bg-gray-900 rounded-xl hover:scale-105 transition">Detection thinking</div>
+       <div class="p-6 bg-gray-900 rounded-xl hover:scale-105 transition">Risk Management
+ 
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="py-20 px-6 max-w-6xl mx-auto relative z-10">
+    <h2 class="text-4xl font-bold mb-10">Projects</h2>
+    <div class="grid md:grid-cols-2 gap-8">
+
+      <div class="bg-gray-900 p-6 rounded-xl hover:shadow-2xl transition">
+        <h3 class="text-2xl font-bold mb-2">SecureChain Access Monitor</h3>
+        <p class="text-gray-400 mb-4">Blockchain‑based access control system using Ethereum smart contracts.</p>
+        <a href="https://github.com/kitsomatlaila/SecureChain-Access-Monitor" target="_blank" class="text-cyan-400 hover:underline">GitHub Repo →</a>
+      </div>
+
+      <div class="bg-gray-900 p-6 rounded-xl hover:shadow-2xl transition">
+        <h3 class="text-2xl font-bold mb-2">AI Threat Detection Tool</h3>
+        <p class="text-gray-400 mb-4">Machine learning system that detects suspicious network activity.</p>
+        <a href="https://github.com/kitsomatlaila/AI-Threat-Detection-Tool" target="_blank" class="text-cyan-400 hover:underline">GitHub Repo →</a>
+      </div>
+
+      <div class="bg-gray-900 p-6 rounded-xl hover:shadow-2xl transition">
+        <h3 class="text-2xl font-bold mb-2">KFX Trading Bot</h3>
+        <p class="text-gray-400 mb-4">Automated trading bot using smart money concepts and risk management.</p>
+        <a href="https://github.com/kitsomatlaila/KFX-Trading-robot" target="_blank" class="text-cyan-400 hover:underline">GitHub Repo →</a>
+      </div>
+
+      <div class="bg-gray-900 p-6 rounded-xl hover:shadow-2xl transition">
+        <h3 class="text-2xl font-bold mb-2">Cyber Awareness Platform</h3>
+        <p class="text-gray-400 mb-4">Educational platform teaching cybersecurity best practices.</p>
+        <a href="https://github.com/kitsomatlaila/CyberSecurity-Awareness" target="_blank" class="text-cyan-400 hover:underline">GitHub Repo →</a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CERTIFICATIONS -->
+  <section class="py-20 bg-gray-950 px-6 relative z-10">
+    <h2 class="text-4xl font-bold text-center mb-10">Certifications</h2>
+    <ul class="max-w-3xl mx-auto space-y-4 text-lg text-gray-300">
+      <li>✔ Oracle Certified Foundations AI Associate</li>
+      <li>✔ AWS Security: Securing Generative AI</li>
+      <li>✔ Automating Cloud Security Posture Management on AWS</li>
+      <li>✔ PwC Forage Cyber Security Consulting Simulation</li>
+      <li>✔ Malware Analysis on AWS: Setting up a secure environment</li>
+      <li>✔ Deloitte Forage Cyber Job Simulation</li>
+      <li>✔ WeThink Code_GenAI for Software Engineers </li>
+    </ul>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="py-20 px-6 text-center relative z-10">
+    <h2 class="text-4xl font-bold mb-6">Let’s Build Something Great</h2>
+    <p class="text-gray-400 mb-6">Hackathons • Startups • Innovation</p>
+    <div class="flex justify-center gap-6">
+      <a href="https://github.com/kitsomatlaila" target="_blank" class="text-cyan-400 hover:underline">GitHub</a>
+      <a href="https://www.linkedin.com/in/kitso-matlaila-b2a377283/overlay/about-this-profile/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3BsBk4KWK5Riq90uSIZ%2Fg92g%3D%3D" target="_blank" class="text-cyan-400 hover:underline">LinkedIn</a>
+    </div>
+  </section>
+
+  <script>
+    // Generate stars
+    const starCount = 100;
+    const starField = document.getElementById('starfield');
+
+    for(let i = 0; i < starCount; i++) {
+      const star = document.createElement('div');
+      star.classList.add('star');
+      star.style.top = Math.random() * window.innerHeight + 'px';
+      star.style.left = Math.random() * window.innerWidth + 'px';
+      star.style.width = star.style.height = Math.random() * 3 + 1 + 'px';
+      star.style.animationDuration = (Math.random() * 2 + 1) + 's';
+      starField.appendChild(star);
+    }
+  </script>
+
+</body>
+</html>
+
